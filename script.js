@@ -1,18 +1,30 @@
+// Zadatak
 
-// Uzmi nasumičan - random broj od 1 do 10
-var num = Math.ceil(Math.random() * 10);  
+var datum = new Date();
+	//Deklariramo varijablu datum i pridodamo
+	//joj vrijednost današnjeg datuma
 
-var slanac = prompt("pogogdi broj između 1 i 10");
-
-if (slanac == num) {
-
-	alert("bravo ti si genije");
-
+var vrijeme = datum.getHours();
+	//deklariramo varijablu vrijeme i pridamo
+	//joj vrijednost sati - današnjeg dana
 	
-} 
+vrijeme = 8	
+
+if (vrijeme >= 19)
+{
+
+	alert("dobra večer. vrijeme je za odmor");
+
+}
+else if (vrijeme >= 11)
+{
+
+	alert("dobar dan spremni smo za nove zadatke");
+
+}
 else
 {
 
-	alert("netočno traženi broj je: " + num);
+	alert("dobro jutro");
 
 }	
